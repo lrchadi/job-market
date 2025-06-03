@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body{
-    background-color: hsl(0, 0%, 96%);
+    background-color: hsl(0, 0%, 98.9%);
 }
 
 @layer utilities{

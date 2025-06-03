@@ -8,17 +8,33 @@ function Interactions( {offer} ) {
         hires: offer.interactions[2].hires,
     })
 
+    const [hasClickedLike, setHasClickedLike] = useState(false)
+    const [hasClickedShare, setHasClickedShare] = useState(false)
+    const [hasClickedHire, setHasClickedHire] = useState(false)
+
 
     const handelLikes = () => {
-        setInteraction(prev => ({...prev, like : prev.like + 1}))
+        setInteraction(hasClickedLike 
+            ? prev => ({...prev, like : prev.like - 1})
+            : prev => ({...prev, like : prev.like + 1})
+        )
+        setHasClickedLike(prev => !prev)
     }
 
     const handelShares = () => {
-        setInteraction(prev => ({...prev, share: prev.share + 1}))
+        setInteraction(hasClickedShare
+            ? prev => ({...prev, share: prev.share - 1})
+            : prev => ({...prev, share: prev.share + 1})
+        )
+        setHasClickedShare(prev => !prev)
     }
 
     const handelHires = () => {
-        setInteraction(prev => ({...prev, hires: prev.hires + 1}))
+        setInteraction(hasClickedHire
+            ? prev => ({...prev, hires: prev.hires - 1})
+            : prev => ({...prev, hires: prev.hires + 1})
+        )
+        setHasClickedHire(prev => !prev)
     }
     
     

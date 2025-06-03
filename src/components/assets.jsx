@@ -1,8 +1,4 @@
-import accounting from '/majors images/accounting.webp';
-import design from '/majors images/design.avif';
-import projetcManajer from '/majors images/project-management.jpg';
-import computerScience from '/majors images/computer-science.jpg';
-import marketing from '/majors images/marketing.jpg';
+
 
 
 export const navBar = [
@@ -33,31 +29,3 @@ export const suggestionsNav = ["Software Engineer", "Project Manager", "Data Ana
 
 export const tranding = ["Digital Marketing", "UX/UI Designer","Software Engineer", "Project Manager"]
 
-
-export const majors = [
-    {
-        id: 1,
-        image: design,
-        name: 'Design'
-    },
-    {
-        id: 2,
-        image: computerScience,
-        name: 'Computer Science'
-    },
-    {
-        id: 3,
-        image: accounting,
-        name: 'Accounting'
-    },
-    {
-        id: 4,
-        image: projetcManajer,
-        name: 'Project Management'
-    },
-    {
-        id: 5,
-        image: marketing,
-        name: 'Marketing'
-    }
-]
