@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "Jumia maroc",
+        "image": "/companies images/jumia-logo.jpg",
+        "location": "Agence Jumia - BD MOHAMED V - Settat",
+        "city": "Settat",
+        "time": "6h ago",
+        "interactions": [{"like": 625}, {"shares": 18}, {"hires": 8}],
+        "offer": "Jumia Maroc recrute des développeurs web et des designers UI/UX pour renforcer son équipe. Les développeurs seront chargés de créer des interfaces responsives en HTML, CSS et JavaScript (React ou Vue), d’assurer la compatibilité multi-navigateurs et de collaborer avec les équipes design et backend. Les designers UI/UX devront concevoir des interfaces intuitives, mener des recherches utilisateurs et travailler étroitement avec les développeurs pour une intégration fluide. Le salaire est compétitif et dépend de l’expérience. Pour postuler, envoyez votre CV à jobs-maroc@jumia.com ou par notre site  www.jumia.ma/careers"
+    },
+    {
+        "id": 2,
+        "name": "Microsoft",
+        "image": "/companies images/microsoft-logo.png",
+        "location": "Microsoft Innovation Hub Chicago",
+        "city": "Chicago",
+        "time": "2d ago",
+        "interactions": [{"like": 12600}, {"shares": 489}, {"hires": 712}],
+        "offer": "Microsoft recrute de nouveaux Data Engineers et Data Analysts pour rejoindre ses équipes techniques. Les Data Engineers seront responsables de la création et de l’optimisation de pipelines de données, de la gestion des flux ETL et de la garantie de la qualité des données sur des plateformes cloud. Les Data Analysts analyseront de grands volumes de données, produiront des rapports clairs pour aider à la prise de décision et collaboreront avec différentes équipes pour transformer les données en actions concrètes. Le salaire est attractif et varie selon l’expérience. Pour postuler, envoyez votre CV à careers@microsoft.com ou bien careers.microsoft.com"
+    },
+    {
+        "id": 3,
+        "name": "Shein",
+        "image": "/companies images/shein-logo.jpg",
+        "location": "Clothing store in Zaozhuang, China",
+        "city": "Zaozhuang",
+        "time": "6d ago",
+        "interactions": [{"like": 999}, {"shares": 384}, {"hires": 256}],
+        "offer": "SHEIN recrute des profils dans les domaines du marketing et de la logistique pour accompagner sa croissance. Les candidats en marketing seront chargés de développer des campagnes digitales, analyser les tendances du marché et améliorer la visibilité de la marque. En logistique, les missions incluent la gestion des stocks, l’optimisation des livraisons et la coordination avec les partenaires de distribution. Le salaire est compris entre 7 000 et 12 000 MAD par mois selon l’expérience. Pour postuler, envoyez votre CV à recrutement@shein.ma ou par le lien www.shein.com/careers"
+    },
+    {
+        "id": 4,
+        "name": "Facebook",
+        "image": "/companies images/facebook-logo.png",
+        "location": "Osage County, Missouri, United States",
+        "city": "Missouri",
+        "time": "1w ago",
+        "interactions": [{"like": 5032}, {"shares": 975}, {"hires": 2350}],
+        "offer": "Facebook recrute de nouveaux collaborateurs spécialisés en intelligence artificielle pour renforcer ses projets liés au machine learning, à la vision par ordinateur et aux systèmes de recommandation. Les candidats travailleront sur des solutions innovantes basées sur les données, collaboreront avec des équipes techniques de haut niveau et contribueront à l’amélioration des produits utilisés par des milliards d’utilisateurs. Le salaire proposé varie entre 25 000 et 40 000 MAD par mois, selon le profil et l’expérience. Pour postuler, envoyez votre CV à ai-jobs@facebook.com, ou visitez notre site par le lien facebook.com/careers"
+    },
+    {
+        "id": 5,
+        "name": "Apple",
+        "image": "/companies images/apple-logo.jpg",
+        "location": "Cupertino, California United States",
+        "city": "California",
+        "time": "8h ago",
+        "interactions": [{"like": 30453}, {"shares": 12843}, {"hires": 7049}],
+        "offer": "Apple recrute de nouveaux talents pour travailler sur la prochaine version de l’iPhone. Les profils recherchés incluent des ingénieurs en matériel, en logiciel et en design, capables de contribuer à l’innovation, aux tests de performance et à l’optimisation de l’expérience utilisateur. Les candidats auront l’opportunité de collaborer avec des équipes internationales sur des technologies de pointe. Le salaire varie entre 30 000 et 45 000 MAD par mois, selon le poste et l’expérience. Pour postuler, envoyez votre CV à iphone-project@apple.com, ou bien dendez vous par www.apple.com/careers"
+    },
+    {
+        "id": 6,
+        "name": "Marjane",
+        "image": "/companies images/marjane-logo.png",
+        "location": "1 Av. Mohamed V, Salé",
+        "city": "Salé",
+        "time": "2d ago",
+        "interactions": [{"like": 241}, {"shares": 36}, {"hires": 103}],
+        "offer": "Marjane à Salé recrute de nouveaux comptables et agents logistiques pour renforcer ses équipes. Les comptables seront chargés de la gestion des écritures comptables, du suivi des factures et de l’élaboration des rapports financiers. Les agents logistiques s’occuperont de la réception des marchandises, de la gestion des stocks et de l’organisation des livraisons. Le salaire proposé se situe entre 5 000 et 8 000 MAD par mois selon l’expérience. Pour postuler, envoyez votre CV à recrutement@marjane.ma et par www.marjane.ma/recrutement"
+    },
+    {
+        "id": 7,
+        "name": "Youcan",
+        "image": "/companies images/youcan-logo.png",
+        "location": "Rabat 11000",
+        "city": "Rabat",
+        "time": "6d ago",
+        "interactions": [{"like": 402}, {"shares": 36}, {"hires": 75}],
+        "offer": "YouCan recrute de nouveaux développeurs frontend et backend pour renforcer son équipe technique. Les développeurs frontend seront responsables de créer des interfaces utilisateur modernes et responsives en utilisant des technologies comme HTML, CSS, et JavaScript (React ou Vue). Les développeurs backend travailleront sur la conception et la maintenance des API, la gestion des bases de données et l’optimisation des performances du serveur. Si vous êtes passionné par le développement web et souhaitez rejoindre une équipe dynamique, envoyez votre CV à dev-jobs@youcan.shop ou bien www.youcan.shop/careers"
+    },
+    {
+        "id": 8,
+        "name": "Afriquia",
+        "image": "/companies images/afriquia-logo.png",
+        "location": "139 Bd Moulay Ismaïl, Casablanca 20250",
+        "city": "Casablanca",
+        "time": "14h ago",
+        "interactions": [{"like": 18}, {"shares": 7}, {"hires": 11}],
+        "offer": "Afriquia Gaz recrute actuellement des comptables et des agents logistiques pour renforcer ses équipes. Les comptables seront chargés de la gestion des écritures comptables, du suivi des factures et de l’élaboration des rapports financiers. Les agents logistiques s’occuperont de la réception des marchandises, de la gestion des stocks et de l’organisation des livraisons. Le salaire proposé est compris entre 5 000 et 8 000 MAD par mois, selon l’expérience. Pour postuler, envoyez votre CV à recrutement@afriquia.com ou par afriquia.ma"
+    },
+    {
+        "id": 9,
+        "name": "Bim",
+        "image": "/companies images/bim-logo.jpg",
+        "location": "Abdurrahmangazi, Ebubekir Cd. No:73, 34887 Sancaktepe/İstanbul, Türkiye",
+        "city": "İstanbul",
+        "time": "2w ago",
+        "interactions": [{"like": 48}, {"shares": 27}, {"hires": 61}],
+        "offer": "BIM recrute des comptables et des agents logistiques pour rejoindre ses équipes. Les comptables seront responsables de la gestion des opérations financières, de la saisie comptable et du contrôle des factures. Les agents logistiques auront pour mission la réception des marchandises, l'organisation des stocks et la planification des livraisons. Le salaire proposé varie entre 5 000 et 7 000 MAD selon l'expérience. Pour postuler, envoyez votre CV à recrutement@bim.ma, ou bien  vistez www.bim.ma"
+    },
+    {
+        "id": 10,
+        "name": "Glovo",
+        "image": "/companies images/glovo-logo.webp",
+        "location": "Carrer de Llull, 108, Sant Martí, 08005 Barcelona, Spain",
+        "city": "Barcelona",
+        "time": "2d ago",
+        "interactions": [{"like": 124}, {"shares": 58}, {"hires": 92}],
+        "offer": "Glovo recherche des coursiers indépendants pour des livraisons flexibles ! Choisissez vos horaires et travaillez à votre rythme, que ce soit à vélo, en scooter ou en voiture. Gagnez de l'argent en fonction du nombre de livraisons effectuées, avec des paiements hebdomadaires. Rejoignez-nous dès maintenant en téléchargeant l'application Glovo Partner!"
+    }
+]

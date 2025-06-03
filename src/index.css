@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body{
+    background-color: hsl(0, 0%, 96%);
+}
+
+@layer utilities{
+    .scrollbar-hide{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .scrollbar-hide::-webkit-scrollbar{
+        display: none;
+    }
+}
