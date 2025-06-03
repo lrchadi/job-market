@@ -4,13 +4,12 @@ import Interactions from './Interactions'
 function CardsOffers() {
 
   const [offers, setOffers] = useState([])
-  const [isLong, setIsLong] = useState('')
   
 
 
   useEffect(() => {
     const fetchingData = async () => {
-      const response = await fetch('../../data.json');
+      const response = await fetch('/data.json');
       const result = await response.json();
       setOffers(result)
     }
