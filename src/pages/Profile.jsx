@@ -5,7 +5,7 @@ function Profile() {
   return (
     <div className='w-full mb-6'>
       <div className="w-full h-32">
-        <img src={banner} alt="banner" />
+        <img src={banner} alt="banner" className='w-full h-full' />
       </div>
       <div className='flex flex-col items-start px-4  w-fit relative -top-16'>  
         <div className='w-[120px] h-[120px] rounded-full border-3 border-gray-800'>
@@ -41,12 +41,6 @@ function Profile() {
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>
           Download my CV
         </button>
-        <div className='w-[350px] mx-auto bg-black h-0.5 mt-10'></div>
-        <p className='mt-5 text-lg font-semibold'>Linkedin: <span className='font-normal'>@ahmed-amin</span></p>
-        <p className='text-lg font-semibold mt-2'>Email: <span className='font-normal'>ahmed12amin@gmail.com</span></p>
-        <div className='text-center w-full'>
-          <p className='mt-10 text-sm text-gray-500 italic'>member since 2024</p>
-        </div>
       </div>
     </div>
   )

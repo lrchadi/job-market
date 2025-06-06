@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 function Interactions( {offer} ) {    
 
@@ -7,6 +7,7 @@ function Interactions( {offer} ) {
         share: offer.interactions[1].shares,
         hires: offer.interactions[2].hires,
     })
+
 
     const [hasClickedLike, setHasClickedLike] = useState(false)
     const [hasClickedShare, setHasClickedShare] = useState(false)
@@ -19,6 +20,7 @@ function Interactions( {offer} ) {
             : prev => ({...prev, like : prev.like + 1})
         )
         setHasClickedLike(prev => !prev)
+        
     }
 
     const handelShares = () => {
@@ -30,12 +32,20 @@ function Interactions( {offer} ) {
     }
 
     const handelHires = () => {
+
+        document.getElementById('applyBox').classList.toggle('hidden')
+        document.body.classList.add('overflow-hidden')
+        
+        
         setInteraction(hasClickedHire
             ? prev => ({...prev, hires: prev.hires - 1})
             : prev => ({...prev, hires: prev.hires + 1})
         )
         setHasClickedHire(prev => !prev)
+        
     }
+    
+   
     
     
   return (
@@ -52,6 +62,8 @@ function Interactions( {offer} ) {
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M440-280h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h240l80 80h320q33 0 56.5 23.5T880-640v400q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H447l-80-80H160v480Zm0 0v-480 480Z"/></svg>
             <p className='font-semibold'>{interaction.hires > 9999 ? interaction.hires.toString().slice(0,2) + 'k' : interaction.hires > 999 ? interaction.hires.toString().at(0) + 'k': interaction.hires}</p>
         </div>
+
+        
     </>
   )
 }

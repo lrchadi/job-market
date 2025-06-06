@@ -13,8 +13,11 @@ function CardsOffers() {
       const result = await response.json();
       setOffers(result)
     }
-    fetchingData()
+    const time = setTimeout(() => {
+      fetchingData()
+    }, 1000)
     
+    return () => clearTimeout(time)
   }, [])
   
   
@@ -24,7 +27,7 @@ function CardsOffers() {
     <div className="mt-5 mb-20 flex flex-col justify-center gap-3">
         {offers.length > 0 ? 
           offers.map(offer => (
-            <div key={offer.id} className="bg-white px-2 py-3 border border-gray-500 ">
+            <div key={offer.id} className="bg-white px-2 py-3 border border-gray-500  ">
             <div className="flex items-center justify-start gap-2">
               <div className='w-[40px] h-[40px] rounded-full overflow-hidden'>
                 <img src={offer.image} alt={offer.name} className='object-cover object-center'/>
@@ -37,7 +40,7 @@ function CardsOffers() {
                 </div>
               </div>
             </div>
-            <p>
+            <p className='md:text-lg'>
               {offer.offer} 
             </p>
             <div className='flex items-center justify-around mt-4 p-1'>
@@ -45,10 +48,18 @@ function CardsOffers() {
             </div>
           </div>
           ))
-        : 'still fetching'}
+        : <FetchingIcon />}
     </div>
   )
 }
 
+
+const FetchingIcon = () => {
+  return (
+    <div className='w-full h-screen flex justify-center items-start mt-22'>
+      <div className="loader"></div>
+    </div>
+  )
+}
 
 export default CardsOffers
