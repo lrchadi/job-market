@@ -24,7 +24,7 @@ function CardsOffers() {
   
     
   return (
-    <div className="mt-5 mb-20 flex flex-col justify-center gap-3">
+    <div className="mt-32 mb-20 flex flex-col justify-center gap-3">
         {offers.length > 0 ? 
           offers.map(offer => (
             <div key={offer.id} className="bg-white px-2 py-3 border border-gray-500  ">

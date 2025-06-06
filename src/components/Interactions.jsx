@@ -15,6 +15,8 @@ function Interactions( {offer} ) {
 
 
     const handelLikes = () => {
+        
+        
         setInteraction(hasClickedLike 
             ? prev => ({...prev, like : prev.like - 1})
             : prev => ({...prev, like : prev.like + 1})
@@ -45,7 +47,7 @@ function Interactions( {offer} ) {
         
     }
     
-   
+
     
     
   return (

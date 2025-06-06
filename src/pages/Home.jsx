@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
-import { suggestionsNav } from "../components/assets";
+import { menuContent, suggestionsNav } from "../components/assets";
 import CardsOffers from "../components/CardsOffers";
 import JobOffers from "./JobOffers";
 import Search from "./Search";
 import logo from "/Logo.png";
-import Footer from "../components/Footer";
 import ApplyForOffres from "../components/ApplyForOffres";
 import Filter from "../components/Filter";
 
@@ -16,12 +14,21 @@ function Home() {
     document.body.classList.add('overflow-hidden');
   };
 
+
+  const handleShowMenu = () => {
+    document.getElementById('showMenu').classList.toggle('hidden')
+    document.body.classList.toggle('overflow-hidden');
+
+  }
+  
+  
+  
   return (
     <>
       <div className="lg:grid lg:grid-cols-3 md:grid-cols-2 z-0">
         {window.innerWidth > 550 && <Search />}
-        <div className=" lg:ml-[365px]  lg:w-[795px]">
-          <header className="flex justify-between items-center px-6 h-14">
+        <div className="lg:ml-[365px] lg:w-[795px] py-2 fixed top-0 right-0 left-0 bg-white">
+          <header className="flex justify-between items-center px-6 h-14 ">
             <img src={logo} alt="Job Market" width={120} height={120} />
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 rounded-full active:bg-slate-200 flex justify-center items-center ">
@@ -43,6 +50,7 @@ function Home() {
                   width="24px"
                   fill="#1f1f1f"
                   className="rounded-full active:bg-slate-200 md:hidden"
+                  onClick={handleShowMenu}
                 >
                   <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                 </svg>
@@ -74,15 +82,36 @@ function Home() {
               </div>
             ))}
           </div>
-          <CardsOffers />
         </div>
+        <CardsOffers />
         {window.innerWidth > 550 && <JobOffers />}
       </div>
       <Filter />
       <ApplyForOffres />
+      <ShowMenu />
+      <ion-icon name="heart">
+        <div className='red-bg'></div>
+      </ion-icon>
     </>
   );
 }
 
+
+const ShowMenu = () => {
+
+  return (
+     <div className="w-full h-full flex items-end bg-red-400 visible-section" >
+        <div className="hidden w-full fixed bottom-0 bg-white border border-gray-300 py-4 rounded-tl-3xl rounded-tr-3xl gb-popup-bounce-to-top" id="showMenu">
+          <div className="w-[100px] mx-auto bg-slate-600 h-[3px] mb-2" />
+          {menuContent.map((content, i) => (
+            <div key={i} className="flex items-center gap-3 py-2 px-4  active:bg-gray-200">
+              {content.icon}
+              <p className={`${content.text === 'Log out' && 'text-red-500 font-bold'}`}>{content.text}</p>
+            </div>
+          ))}
+        </div>
+     </div>
+  )
+}
 
 export default Home;
