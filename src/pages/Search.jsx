@@ -5,8 +5,8 @@ import user from '/user.jpg'
 
 function Search() {
   return (
-    <div className="py-5 px-4 lg:fixed lg:h-full lg:w-[360px] z-0 ">
-      <h1 className=" font-bold text-2xl mb-4 ">Search</h1>
+    <div className="py-5 px-4 lg:fixed lg:h-[96vh] lg:w-[360px] z-0 ">
+      <h1 className=" font-bold text-2xl mb-4">Search</h1>
       <div className="flex items-center gap-4">
         <Link to={"/"} className=" lg:hidden ">
           <svg
@@ -23,7 +23,7 @@ function Search() {
           <input
             type="text"
             placeholder="search..."
-            className="w-full h-full border-none outline-none shadow-2xl rounded-full px-4 bg-white"
+            className="w-full h-full border-none outline-none shadow-md rounded-full px-4 bg-white"
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"

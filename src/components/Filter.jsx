@@ -1,4 +1,3 @@
-import React from "react";
 
 function Filter() {
 
@@ -12,7 +11,7 @@ function Filter() {
     
   return (
     <div className="hidden" id="filter">
-      <div className="w-full h-screen backdrop-brightness-40 z-20 absolute top-0 flex justify-center items-center">
+      <div className="w-full h-screen backdrop-brightness-40 z-20 fixed top-0 flex justify-center items-center">
         <div className="border bg-white p-1 md:p-3 rounded-lg z-30 ">
           <div className="flex justify-between items-center">
             <h1 className="text-xl font-bold">Filter</h1>

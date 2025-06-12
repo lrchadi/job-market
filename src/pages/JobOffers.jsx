@@ -10,7 +10,7 @@ function JobOffers() {
     const fetching = async () => {
       const res = await fetch('/data.json');
       const data = await res.json()
-      setAppliedOffers([data[1], data[3]])
+      setAppliedOffers([data[1], data[3], data[4]])
     }
 
     fetching()
@@ -29,7 +29,7 @@ function JobOffers() {
           appliedOffers.map(offer => (
             <div key={offer.id} className='w-full py-2 px-1 mb-4 border rounded-lg bg-white'>
               <p>You have applied to {offer.name} at 1/4/2025, at 12:34 PM </p>
-              <p className='text-sm italic text-gray-500'> <strong>Statu:</strong> {status[offer.id - statu]}</p>
+              <p className='text-sm italic text-gray-500'> <strong>Status:</strong> {status[offer.id - statu]}</p>
             </div>
           ))
         )
@@ -38,7 +38,6 @@ function JobOffers() {
             appear here.
           </p>
         )
-      
       }
       </div>
 

@@ -8,7 +8,6 @@ import Filter from "../components/Filter";
 
 function Home() {
   
-
   const handledFilter = () => {
     document.getElementById("filter").classList.toggle("hidden");
     document.body.classList.add('overflow-hidden');
@@ -20,14 +19,13 @@ function Home() {
     document.body.classList.toggle('overflow-hidden');
 
   }
-  
-  
+
   
   return (
     <>
-      <div className="lg:grid lg:grid-cols-3 md:grid-cols-2 z-0">
+      <div className="lg:grid lg:grid-cols-3 md:grid-cols-2">
         {window.innerWidth > 550 && <Search />}
-        <div className="lg:ml-[365px] lg:w-[795px] py-2 fixed top-0 right-0 left-0 bg-white">
+        <div className="lg:ml-[365px] lg:w-[795px] py-2 fixed z-0 top-0 right-0 left-0 lg:block bg-white">
           <header className="flex justify-between items-center px-6 h-14 ">
             <img src={logo} alt="Job Market" width={120} height={120} />
             <div className="flex items-center gap-4">
@@ -78,7 +76,7 @@ function Home() {
                 key={i}
                 className="py-1 px-2 rounded-sm bg-white shadow-md active:bg-slate-50 cursor-pointer "
               >
-                <p className="text-nowrap  ">{suggestion}</p>
+                <p className="text-nowrap">{suggestion}</p>
               </div>
             ))}
           </div>
@@ -89,18 +87,15 @@ function Home() {
       <Filter />
       <ApplyForOffres />
       <ShowMenu />
-      <ion-icon name="heart">
-        <div className='red-bg'></div>
-      </ion-icon>
     </>
   );
 }
 
 
-const ShowMenu = () => {
+const   ShowMenu = () => {
 
   return (
-     <div className="w-full h-full flex items-end bg-red-400 visible-section" >
+     <div className="w-full h-full flex items-end visible-section" >
         <div className="hidden w-full fixed bottom-0 bg-white border border-gray-300 py-4 rounded-tl-3xl rounded-tr-3xl gb-popup-bounce-to-top" id="showMenu">
           <div className="w-[100px] mx-auto bg-slate-600 h-[3px] mb-2" />
           {menuContent.map((content, i) => (
