@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import { tranding } from "../components/assets";
 import user from '/user.jpg'
+import Navbar from "../components/Navbar";
 
 
 function Search() {
   return (
+    <>
+      <Navbar />
     <div className="py-5 px-4 lg:fixed lg:h-[96vh] lg:w-[360px] z-0 ">
       <h1 className=" font-bold text-2xl mb-4">Search</h1>
       <div className="flex items-center gap-4">
@@ -86,6 +89,7 @@ function Search() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

@@ -1,8 +1,12 @@
 import userImage from '/user.jpg'
 import banner from '/banner_image.avif'
+import Navbar from "../components/Navbar";
 
 function Profile() {
   return (
+    <>
+      <Navbar />
+
     <div className='w-full mb-6'>
       <div className="w-full h-32">
         <img src={banner} alt="banner" className='w-full h-full' />
@@ -43,6 +47,7 @@ function Profile() {
         </button>
       </div>
     </div>
+    </>
   )
 }
 

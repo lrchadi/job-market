@@ -5,6 +5,7 @@ import Search from "./Search";
 import logo from "/Logo.png";
 import ApplyForOffres from "../components/ApplyForOffres";
 import Filter from "../components/Filter";
+import Navbar from "../components/Navbar";
 
 function Home() {
   
@@ -23,6 +24,7 @@ function Home() {
   
   return (
     <>
+      <Navbar />
       <div className="lg:grid lg:grid-cols-3 md:grid-cols-2">
         {window.innerWidth > 550 && <Search />}
         <div className="lg:ml-[365px] lg:w-[795px] py-2 fixed z-0 top-0 right-0 left-0 lg:block bg-white">

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Navbar from "../components/Navbar";
 
 function JobOffers() {
 
@@ -21,6 +22,9 @@ function JobOffers() {
   
   
   return (
+    <>
+      <Navbar />
+
     <div className=" px-4 py-5 lg:fixed lg:right-0 lg:w-[360px] lg:h-screen overflow-y-scroll scrollbar-hide z-0 ">
       <h1 className="text-2xl font-bold mb-10 fixed w-full top-0 py-6 bg-white">Job Offers</h1>
       <div className='mt-20'>
@@ -40,9 +44,8 @@ function JobOffers() {
         )
       }
       </div>
-
-      
     </div>
+    </>
   );
 }
 
